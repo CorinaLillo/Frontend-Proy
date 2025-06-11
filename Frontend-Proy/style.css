@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between; /* logo a la izquierda*/
     align-items: center;
-    background-color: #70a3de;
+    background-color: #069797;
     color: #fff;
     padding: 10px 20px;
     position: fixed;
@@ -64,8 +64,8 @@ nav ul li a {
 /* pasar el mouse o enfocar */
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #c4c5e4;
-    color: #333;
+    background-color: #09aab6;
+    color: #becfcf;
 }
 
 /* Estilos del main*/
@@ -87,7 +87,7 @@ main {
 #inicio h1 {
     font-size: 3em;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: #1a8796;
 }
 
 /* Subtítulo*/
