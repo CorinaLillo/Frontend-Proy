@@ -1,0 +1,572 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda*/
+    align-items: center;
+    background-color: #70a3de;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+/* Estilos del Logo*/
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen del Logo */
+header .logo img {
+    height: 80px;
+    width: auto;
+    margin-right: 15px; 
+}
+
+/* Navegación Principal */
+nav { 
+    margin-left: auto; /* derecha */
+    margin-right: auto; /*izquierda*/
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Enlaces de Nav */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* pasar el mouse o enfocar */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #c4c5e4;
+    color: #333;
+}
+
+/* Estilos del main*/
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* SecInicio */
+#inicio {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Título de inic */
+#inicio h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Subtítulo*/
+#inicio h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #34495e;
+}
+
+/* Párrafos*/
+#inicio p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Imagen en Inicio */
+#inicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* secc nosotros */
+#nosotros {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* titulo*/
+#nosotros h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-decoration: underline;
+    text-decoration-color: #70a3de;
+}
+
+/* parrafos */
+#nosotros p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+/* Estilos del Contenedor de Tarjetas  */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Tarjetas Individuales */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tarjetas al pasar el mouse */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos de Imágenes dentro de Tarjetas */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilos de Títulos H2 y H3 dentro de Tarjetas */
+.card h2, .card h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Estilos de Títulos H4 dentro de Tarjetas */
+.card h4 {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* Párrafos dentro de Tarjetas */
+.card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Listas dentro de Tarjetas */
+.card ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Elementos de Lista dentro de Tarjetas */
+.card ul li {
+    margin-bottom: 8px;
+}
+
+/* Sección Servicios */
+#servicios {
+    padding: 40px 20px;
+    background-color: #f0f8ff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Título */
+#servicios h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-decoration: underline;
+    text-decoration-color: #70a3de;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual */
+.service-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* al pasar el mouse*/
+.service-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/*Títulos H3  */
+.service-item h3 {
+    font-size: 1.6em;
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Párrafos*/
+.service-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+.service-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.service-item ul li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.service-item h4 {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/*Enlace "Leer más" */
+.service-item a {
+    display: inline-block;
+    background-color: #70a3de;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Enlace "Leer más" al pasar el mouse */
+.service-item a:hover {
+    background-color: #5a8ecf;
+}
+
+/* Sección Novedades y Artículos */
+#novedades {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Título de Novedades */
+#novedades h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-decoration: underline;
+    text-decoration-color: #70a3de;
+}
+
+/* Cuadrícula de Novedades */
+.novedades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*Artículo de Novedad */
+.novedad-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*Artículos de Novedad al pasar el mouse */
+.novedad-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/*Títulos H3 dentro de los Artículos de Novedad */
+.novedad-item h3 {
+    font-size: 1.4em;
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/*Párrafos dentro de los Artículos de Novedad */
+.novedad-item p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/*Enlace "Leer más" */
+.novedad-item a {
+    display: inline-block;
+    background-color: #70a3de;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Enlace "Leer más" al pasar el mouse */
+.novedad-item a:hover {
+    background-color: #5a8ecf;
+}
+
+/*Sección Contacto  */
+#contactos {
+    padding: 40px 20px;
+    background-color: #e6f0ff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/*Título de Contacto */
+#contactos h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    text-decoration: underline;
+    text-decoration-color: #70a3de;
+}
+
+/* Párrafos en Contacto */
+#contactos p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Bloque de Información de Contacto */
+.contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*Información de Contacto */
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/*Texto en Negrita*/
+.contact-info strong {
+    color: #2c3e50;
+}
+
+/* Enlaces */
+.contact-info a {
+    color: #70a3de;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Enlaces en la Información de Contacto al pasar el mouse */
+.contact-info a:hover {
+    color: #5a8ecf;
+    text-decoration: underline;
+}
+
+/* Estilo del mapa en contacto (cuadrado pequeño) */
+.mapa-cuadrada {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+/* Footer*/
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Móviles y Tablets*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        position: relative;
+    }
+
+    header .logo img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main {
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    #inicio h1 {
+        font-size: 2.2em;
+    }
+
+    #inicio h2 {
+        font-size: 1.5em;
+    }
+
+    .services-grid,
+    .novedades-grid,
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+/*estilos de Js Slider, fijate si queda bien sino me avisas*/
+#carrusel {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+}
+
+/* Imagenes del slider */
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
